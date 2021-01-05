@@ -5,13 +5,17 @@ for i in range(T):
     A=[(N,N-x+y),(x,N),(0,x-y),(x-y,0)]
     B=[(y,N),(N,N-y+x),(y-x,0),(0,y-x)]
     if x==y:
-        print(*(N,N))
+        ans.append((N,N))
     elif x>y:
-        for ele in A:
-            ans.append(A[K-1])
-        print(*ans[0])
+        for j in range(K):
+            if j==K:
+                ans.append(A[K-1])
+        
     else:
-        for ele in B:
-            ans.append(B[K-1])
-        print(*ans[0])        
+        for j in range(K):
+            if j==K:
+                ans.append(B[K-1])
+
+for i in range(T):
+    print(*ans[i])                
 

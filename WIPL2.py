@@ -1,27 +1,11 @@
 T=int(input())
-list1=[]
 ans=[]
 for i in range(T):
+    list1=[]
+    list2=[]
     N,K=map(int,input().split(" "))
     nums=list(map(int,input().split(" ")))
     nums.sort(reverse=True)
-
-    if max(nums)>=K:
-        count=1
-        sum=0
-        for i in range(1,len(nums)):
-            sum+=nums[i]
-            if sum>=K:
-                count+=1
-                break
-        print(count)
-
-    elif max(nums)<K:
-        if sum(nums)==2*K:
-            if len(nums)%2==0:
-                print(len(nums))
-        else:
-            print(-1)
 
     if sum(nums)>=2*K:
         arr=[]
@@ -57,4 +41,4 @@ for i in range(T):
     else:
         print(-1)
 for ele in ans:
-    print(ele)
+    print(ele)        

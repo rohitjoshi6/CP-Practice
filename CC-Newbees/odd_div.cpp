@@ -5,13 +5,15 @@ using namespace std;
 
 void oddDiv(long long int n){
 	for (int i=2;i<=n;i++){
-		if (n%i!=0)
+		if (n%i==0)
 		{
-			cout<<"YES"<<endl;
-			break;
-		}else{
+			if(i%2!=0){
+				cout<<"YES"<<endl;
+				break;
+			}else{
 			cout<<"NO"<<endl;
 			break;
+			}
 		}
 	}
 }

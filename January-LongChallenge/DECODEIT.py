@@ -12,9 +12,4 @@ for i in range(T):
         print(out)    
     else:
         ans=int(S,2)
-        print(letters[ans])        
-
-
-
-
-
+        print(letters[ans]) 

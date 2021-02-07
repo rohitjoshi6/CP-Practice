@@ -1,2 +1,1 @@
-# Codechef-JAN
-This repository contains solutions for Codechef January Challenge
+## This repository contains my accepted solutions for various cp problems.

@@ -1,0 +1,15 @@
+a=int(input())
+b=int(input())
+c=int(input())
+num=[]
+A=a+b*c
+num.append(A)
+B=a*(b+c)
+num.append(B)
+C=a*b*c
+num.append(C)
+D=(a+b)*c
+num.append(D)
+E=a+b+c
+num.append(E)
+print(max(num))
